@@ -1,1 +1,59 @@
-theme: jekyll-theme-cayman
+# Site Configuration
+title: Shariful Alam
+description: "Ph.D. graduate in Cybersecurity from Boise State University. Researching operating system security, hardware security, and covert channels."
+url: "https://shariful.dev"
+baseurl: ""
+author: Shariful Alam
+email: contact@shariful.dev
+
+# Social Links
+github_username: AlamShariful
+twitter_username: Shariful___Alam
+linkedin_username: shariful-alam-162267114
+scholar_url: "https://scholar.google.com/citations?user=r_tyw1IAAAAJ&hl=en"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:year/:month/:day/:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Plugins (GitHub Pages compatible)
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from build
+exclude:
+  - old/
+  - scss/
+  - gulpfile.js
+  - package.json
+  - package-lock.json
+  - node_modules/
+  - README.md
+  - readme.txt
+  - LICENSE
+
+# Sass settings
+sass:
+  sass_dir: _sass
+  style: compressed

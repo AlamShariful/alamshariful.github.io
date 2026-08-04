@@ -1,0 +1,38 @@
+# Work Experience - Add new entries at the top
+# Format:
+#   - period: "Start - End"
+#     company: "Company Name"
+#     title: "Job Title"
+#     highlights:
+#       - "Achievement or responsibility 1"
+#       - "Achievement or responsibility 2"
+
+- period: "August 2022 - Present"
+  company: "Marvell Technology, Inc"
+  title: "Senior Security & Crypto Engineer"
+  highlights:
+    - "Firmware Development: Developing a Zephyr RTOS-based firmware app for CXL command handling; gaining RTOS application development experience."
+    - "Interface Design: Defined interfaces for firmware component communication to process CXL requests."
+    - "Simulation & Debugging: Using VDKs for custom SOC simulation and firmware debugging."
+    - "Testing Environment: Setting up a comprehensive environment for custom firmware testing."
+    - "Data Security Collaboration: Collaborated on integrating advanced PQC algorithms to enhance data security against quantum threats."
+    - "Hardware Security Module Oversight: Managing a Hardware Security Module toolkit; responsible for maintenance, implementation, debugging, and monthly releases."
+    - "Customer Support: Assisted operations teams with software-related customer queries, ensuring high service quality."
+
+- period: "January 2019 - May 2022"
+  company: "Boise State University, USA"
+  title: "Graduate Assistant"
+  highlights:
+    - "Extensively researched methods to reduce the attack surface of Operating System kernels, resulting in the implementation of a virtualization-based research idea. This work led to the acceptance of a conference paper."
+    - "Configured an Apache server for HTTPS protocol and digital certificates, resulting in a comprehensive understanding of Public-key Infrastructure."
+    - "Utilized GDB to debug and analyze the OpenSSL source code, gaining insights into the inner workings of cryptographic libraries in real-world applications."
+    - "Developed a secure OpenSSL engine incorporating C, MbedTLS library, multithreading, virtualization, and inline assembly. Project executed and tested in a Linux environment."
+    - "Conducted an investigation of possible covert channels using modern x86 CPU features."
+    - "Wrote kernel rootkits and device drivers and gained hands-on experience with the system call table of Operating Systems."
+
+- period: "February 2017 - December 2018"
+  company: "Lamar University, USA"
+  title: "Graduate Assistant"
+  highlights:
+    - "Collaborated with a development team to create an internet-based self-therapy platform aimed at helping patients with hearing disabilities. The platform also generated real-life data that was used to support ongoing research efforts."
+    - "Demonstrated full-stack web development skills by utilizing jQuery and Twitter Bootstrap for the front end and the CodeIgniter Framework for the back end, complete with a MySQL database, ultimately resulting in a fully functional web application."

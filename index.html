@@ -1,457 +1,271 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-<head>
+---
+layout: default
+title: Home
+---
 
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Shariful Alam</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="favicon.ico">
-
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
-
-    <!-- favicons
-    ================================================== -->
-    <!--link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest"-->
-
-</head>
-
-<body id="top">
-
-    <div id="preloader">
-        <div id="loader"></div>
-    </div>
-
-    <!-- site header
-    ================================================== -->
-    <header class="s-header">
-        <nav class="header-nav-wrap">
-            <ul class="header-main-nav">
-                <li class="current"><a class="smoothscroll" href="#intro" title="intro">Home</a></li>
-                <li><a class="smoothscroll" href="#about" title="about">About</a></li>
-                <li><a class="smoothscroll" href="#services" title="services">Publications</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a class="smoothscroll" href="#contact" title="contact us">Contact</a></li>
-            </ul>
-
-            <!--ul class="header-social">
-                <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-behance" aria-hidden="true"></i></a></li>
-            </ul-->
-        </nav>
-
-        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
-
-    </header> <!-- end s-header -->
-
-
-    <!-- intro
-    ================================================== -->
-    <section id="intro" class="s-intro target-section">
-
-        <div class="row intro-content">
-
-            <div class="column large-9 mob-full intro-text">
-                <h3>Hello, I'm Shariful</h3>
-                <h1>
-                    Ph.D. Student, <br>
-                    Cyber Security <br>
-                    @Boise State University.
-                </h1>
-            </div>
-
-            <div class="intro-scroll">
-                <a href="#about" class="intro-scroll-link smoothscroll">
-                    Scroll For More
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-grid-pattern"></div>
+    <div class="container">
+        <div class="hero-content">
+            <span class="hero-greeting">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                </svg>
+                Hello, I'm
+            </span>
+            <h1 class="hero-title">
+                <span class="gradient-text">Shariful Alam</span>
+            </h1>
+            <p class="hero-subtitle">
+                Senior Security & Crypto Engineer @ Marvell Technology
+            </p>
+            <p class="hero-description">
+                Securing systems from silicon to software. My research focuses on 
+                operating system security, hardware security, and investigating 
+                covert channels in modern CPU architectures.
+            </p>
+            <div class="hero-actions">
+                <a href="#publications" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+                    </svg>
+                    View Publications
+                </a>
+                <a href="{{ '/Resume_Shariful.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    Download Resume
                 </a>
             </div>
-
-            <div class="intro-grid"></div>
-            <div class="intro-pic"></div>
-
-        </div> <!-- end row -->
-
-    </section> <!-- end intro -->
-
-
-    <!-- about
-    ================================================== -->
-    <section id="about" class="s-about target-section">
-
-        <div class="about-me">
-
-            <div class="row heading-block" data-aos="fade-up">
-                <div class="column large-full">
-                    <h2 class="section-heading">About Me</h2>
-                </div>
-            </div>
-
-            <div class="row about-me__content" data-aos="fade-up">
-                <!--div class="column large-full about-me__text"-->
-                <div class="large-full about-me__text">
-                    <p class="lead">
-                        Self-motivated, goal-oriented, hardworking graduate student, enthusiastic polyglot programmer. Currently working towards my Ph.D. degree emphasize in Cybersecurity.
-                    </p>
-
-                    <p>
-                        I’m a Ph.D. student at Boise State Univesity(BSU). I have started my journey with BSU from Spring ’19.
-                        My research interest is mainly in cybersecurity with a particular emphasis on operating system security and hardware security.
-                        Currently, I’m investigating the possibility of establishing a covert channel using modern CPU features.
-                        <br>
-                        <br>
-			I was born and raised in Dhaka, the capital of Bangladesh. I earned my Bachelor's degree in Computer Science and Engineering in Bangladesh in 2014 and obtained my Master’s degree in Computer Science from Lamar University, Texas, in the fall of 2018. In addition to my research interests, I enjoy exploring new places and spending my free time chatting with family and friends.
-
-                    </p>
-
-
-                    <!--p>
-                    Rerum consequatur dolore quae.
-                    Qui excepturi facilis quam quae quasi. Mollitia occaecati minus voluptas veniam.
-                    Qui excepturi facilis quam quae quasi. Mollitia occaecati minus voluptas veniam. Est est occaecati dolor 
-                    qui aut et eum. Aspernatur quos cumque ea dolorum nemo nihil 
-                    beatae magnam. Qui molestiae rem.
-                    </p-->
-
-                    <!--p>
-                    Maxime enim provident ipsum reprehenderit tenetur. Et cupiditate 
-                    repellendus. Et modi ipsum aut harum. Ratione alias sed. Rerum 
-                    consequatur dolore quae. Qui excepturi facilis quam quae quasi. 
-                    Mollitia occaecati minus voluptas veniam. Est est occaecati dolor 
-                    qui aut et eum. Aspernatur quos cumque ea dolorum nemo nihil 
-                    beatae magnam. Qui molestiae rem. Aspernatur quos cumque ea dolorum 
-                    nemo nihil. Qui molestiae rem.
-                    </p-->
-                </div>
-            </div>
-    
-            <!--div class="row about-me__buttons">
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <a href="#0" class="btn btn--stroke full-width">Hire Me</a>
-                </div>
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <a href="#0" class="btn btn--primary full-width">Download CV</a>
-                </div>
-            </div-->
-
-        </div> <!-- end about-me -->
-
-        <!-- Insert Empty div -->
-        <div style="height:50px; width:100%; clear:both;"></div>
-
-        <div class="about-experience">
-
-            <div class="row heading-block" data-aos="fade-up">
-                <div class="column large-full">
-                    <h2 class="section-heading">Work & Education</h2>
-                </div>
-            </div>
-
-            <div class="row about-experience__timeline">
-
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <div class="timeline">
-
-                        <div class="timeline__icon-wrap">
-                            <span class="timeline__icon timeline__icon--work"></span>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">August 2022 - Present</p>
-                                <h3 class="item-title">Marvell Technology, Inc</h3>
-                                <h5>Senior Security & Crypto Engineer</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>
-                                    ● Firmware Development: Developing a Zephyr RTOS-based firmware app for CXL command handling; gaining RTOS application development experience.<br>
-                                    ● Interface Design: Defined interfaces for firmware component communication to process CXL requests. <br>
-                                    ● Simulation & Debugging: Using VDKs for custom SOC simulation and firmware debugging.<br>
-                                    ● Testing Environment: Setting up a comprehensive environment for custom firmware testing. <br>
-                                    ● Data Security Collaboration: Collaborated on integrating advanced PQC algorithms to enhance data security against quantum threats. <br>
-                                    ● Hardware Security Module Oversight: Managing a Hardware Security Module toolkit; responsible for maintenance, implementation, debugging, and monthly releases. <br>
-                                    ● Customer Support: Assisted operations teams with software-related customer queries, ensuring high service quality. <br>
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">January 2019 - May 2022</p>
-                                <h3 class="item-title">Boise State University, USA</h3>
-                                <h5>Graduate Assistant</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>
-                                   ● Extensively researched methods to reduce the attack surface of Operating System kernels, resulting in the implementation of a virtualization-based research idea. This work led to the acceptance of a conference paper. <br>
-                                   ● Configured an Apache server for HTTPS protocol and digital certificates, resulting in a comprehensive understanding of Public-key Infrastructure. <br>
-                                   ● Utilized GDB to debug and analyze the OpenSSL source code, gaining insights into the inner workings of cryptographic libraries in real-world applications. <br>
-                                   ● Developed a secure OpenSSL engine incorporating C, MbedTLS library, multithreading, virtualization, and inline assembly. Project executed and tested in a Linux environment <br>
-                                   ● Conducted an investigation of possible covert channels using modern x86 CPU features. <br>
-                                   ● Wrote kernel rootkits and device drivers and gain hands-on experience with the system call table of Operating Systems. <br>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">February 2017 - December 2018</p>
-                                <h3 class="item-title">Lamar University,USA</h3>
-                                <h5>Graduate Assistant</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>
-                                    ● Collaborated with a development team to create an internet-based self-therapy platform aimed at helping patients with hearing disabilities. The platform also generated real-life data that was used to support ongoing research efforts. <br>
-                                    ● Demonstrated full-stack web development skills by utilizing jQuery and Twitter Bootstrap for the front end and the CodeIgniter Framework for the back end, complete with a MySQL database, ultimately resulting in a fully functional web application. <br>
-                                </p>
-                            </div>
-                        </div>
-
-                        <!--div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">February 2015 - June 2015</p>
-                                <h3 class="item-title">MonaIT, Bangladesh</h3>
-                                <h5>Trainee Programmer</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>
-                                    Develop various web application using PHP codegniter MVC framework and modern front-end technology.
-                                    Use Wordpress & opencart on several Projects.
-                                </p>
-                            </div>
-                        </div-->
-
-                    </div>
-                </div>
-
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <div class="timeline">
-
-                        <div class="timeline__icon-wrap">
-                            <span class="timeline__icon timeline__icon--education"></span>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">January 2019 - Present</p>
-                                <h3 class="item-title">Boise State University</h3>
-                                <h5>Ph.D. in Computing (Cybersecurity)</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <!-- p>Advisor <blockquote>Dr. Jidong Xiao</blockquote> </p-->
-				<p>Advisor <blockquote><a href="http://nasireisty.com/"> Dr. Nasir U. Eisty</a></blockquote> </p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">August 2015 - December 2018</p>
-                                <h3 class="item-title">Lamar University</h3>
-                                <h5>Master of Science in Computer Science</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Advisor <blockquote>Dr. Stefan Andrei</blockquote></p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">January 2009 - June 2014</p>
-                                <h3 class="item-title">Mawlana Bhashani Science and Technology University, Bangladesh</h3>
-                                <h5>Bachelor of Science in Computer Science and Engineering</h5>
-                            </div>
-                            <!--div class="timeline__desc">
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                            </div-->
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </div> <!-- end about-experience -->
-
-    </section> <!-- end s-about -->
-
-
-    <!-- services
-    ================================================== -->
-    <section id="services" class="s-services ss-dark target-section">
-
-        <div class="shadow-overlay"></div>
-
-        <div class="row heading-block heading-block--center" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-heading section-heading--centerbottom">Publications</h2>
-
-		<p class="section-desc"><a href="https://ieeexplore.ieee.org/abstract/document/10272417">
-			CAUSEC: Cache-based Secure Key Computation with (Mostly) Deprivileged Execution. 2023 IEEE 43nd International Conference on Distributed Computing Systems (ICDCS ‘23) </a>
-                </p>
-		<p class="section-desc"><a href = "https://arxiv.org/abs/2404.05823">
-                	Exploiting CPU Clock Modulation for Covert Communication Channel(SERA 24)
-		</p>
-            </div>
-        </div> <!-- end heading-block -->
-
-        <div class="row services-list block-large-1-3 block-medium-1-2 block-tab-full">
-
-            <div class="column item-service" data-aos="fade-up">
-                <!--div class="item-service__content--">
-                    <!--h4 class="item-title">Resume</h4-->
-                    <p>
-		    <a href="https://drive.google.com/file/d/1PC7cNzk38jMFh1Mu1SfI6XU1bSQMVRim/view"> Updated Resume</a>
-                    </p>
-                </div>
-            </div>
-            <!--div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Illustration</h4>
-                    <p>
-                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
-                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
-                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
-                    </p>
-                </div>
-            </div-->
-
-
-        </div> <!-- end services-list -->
-
-    </section> <!-- end s-services -->
-
-
-
-    <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact ss-dark target-section">
-
-        <div class="row heading-block" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-heading">Shoot me an Email</h2>
+            <div class="hero-social">
+                <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="{{ site.scholar_url }}" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+                <a href="mailto:{{ site.email }}" aria-label="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                </a>
             </div>
         </div>
+    </div>
+    <div class="scroll-indicator">
+        <span>Scroll</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"/>
+        </svg>
+    </div>
+</section>
 
-        <div class="row contact-main" data-aos="fade-up">
-            <div class="column large-full">
-                <p class="contact-email">
-                    <a href="mailto:#0">contact@shariful.dev</a>
+<!-- About Section -->
+<section class="section" id="about">
+    <div class="container">
+        <h2 class="section-title fade-in">About Me</h2>
+        <div class="about-content">
+            <div class="about-text fade-in">
+                <p class="lead">
+                    Self-motivated, goal-oriented security researcher and enthusiastic polyglot programmer. 
+                    Ph.D. graduate in Computing with an emphasis in Cybersecurity.
                 </p>
-
-                <p class="section-desc">
-                I'm happy to talk about new ideas, connect, listen and help. .
-                <a href="mailto:#0">Email Me</a>.
+                <p>
+                    I completed my Ph.D. in Computing with a focus on Cybersecurity from Boise State University 
+                    in May 2025. Currently, I work as a Senior Security & Crypto Engineer at Marvell Technology 
+                    in Santa Clara, California. My research interests are mainly in cybersecurity with particular 
+                    emphasis on operating system security and hardware security. My doctoral work investigated 
+                    covert channels in modern CPU architectures.
+                </p>
+                <p>
+                    I was born and raised in Dhaka, the capital of Bangladesh. I earned my Bachelor's degree in 
+                    Computer Science and Engineering in Bangladesh in 2014 and obtained my Master's degree in 
+                    Computer Science from Lamar University, Texas, in the fall of 2018. In addition to my research 
+                    interests, I enjoy exploring new places and spending my free time chatting with family and friends.
                 </p>
             </div>
-        </div>
-
-        <div class="row contact-infos" data-aos="fade-up" data-aos-anchor=".contact-main">
-
-            <!--div class="column large-5 medium-full contact-phone">
-                <h4>Call Me</h4>
-                <a href="tel:197-543-2345">+197 543 2345</a>
-            </div-->
-
-            <div class="column large-7 medium-full contact-social">
-                <h4>Find me on</h4>
-                <ul>
-                    <li><a href="https://github.com/AlamShariful" title="Github">GitHub</a></li>
-                    <li><a href="https://twitter.com/Shariful___Alam" title="Twitter">Twitter</a></li>
-                    <li><a href="https://www.linkedin.com/in/shariful-alam-162267114" title="Linkedin">LinkedIn</a></li>
-                    <li><a href="https://scholar.google.com/citations?user=r_tyw1IAAAAJ&hl=en" title="Google Scholar">Google Scholar</a></li>
-                </ul>
-            </div>
-
-        </div> <!-- end contact-infos -->
-
-    </section> <!-- end s-contact -->
-
-
-    <!-- footer
-    ================================================== -->
-    <footer>
-        <div class="row">
-            <div class="column large-full ss-copyright">
-                <span>© Copyright Epitome <script>document.write(new Date().getFullYear())</script></span>
-                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
-            </div>            
-
-            <div class="ss-go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top"></a>
+            <div class="about-stats fade-in">
+                <div class="stat-card">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Years of Research</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Publications</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Degrees Earned</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Curiosity</div>
+                </div>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
 
-
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
-                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
-                    "Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
+<!-- Experience & Education Section -->
+<section class="section section-alt" id="experience">
+    <div class="container">
+        <h2 class="section-title fade-in">Experience & Education</h2>
+        <div class="timeline-grid">
+            <!-- Work Experience -->
+            <div class="timeline-column fade-in">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                    </svg>
+                    Work Experience
+                </h3>
+                <div class="timeline">
+                    {% for exp in site.data.experience %}
+                    <div class="timeline-item">
+                        <span class="timeline-period">{{ exp.period }}</span>
+                        <h4 class="timeline-title">{{ exp.title }}</h4>
+                        <p class="timeline-company">{{ exp.company }}</p>
+                        <div class="timeline-description">
+                            <ul>
+                                {% for highlight in exp.highlights %}
+                                <li>{{ highlight }}</li>
+                                {% endfor %}
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
-                "Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
+                    {% endfor %}
                 </div>
             </div>
 
+            <!-- Education -->
+            <div class="timeline-column fade-in">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                    </svg>
+                    Education
+                </h3>
+                <div class="timeline">
+                    {% for edu in site.data.education %}
+                    <div class="timeline-item">
+                        <span class="timeline-period">{{ edu.period }}</span>
+                        <h4 class="timeline-title">{{ edu.degree }}</h4>
+                        <p class="timeline-company">{{ edu.institution }}</p>
+                        {% if edu.advisor %}
+                        <div class="timeline-description">
+                            <p>
+                                Advisor: 
+                                {% if edu.advisor_url %}
+                                <a href="{{ edu.advisor_url }}" target="_blank" rel="noopener noreferrer">{{ edu.advisor }}</a>
+                                {% else %}
+                                {{ edu.advisor }}
+                                {% endif %}
+                            </p>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
+    </div>
+</section>
 
-    </div><!-- end photoSwipe background -->
+<!-- Publications Section -->
+<section class="section" id="publications">
+    <div class="container">
+        <h2 class="section-title fade-in">Publications</h2>
+        <div class="publications-list">
+            {% for pub in site.data.publications %}
+            <article class="publication-card fade-in">
+                <span class="publication-venue">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+                    </svg>
+                    {{ pub.venue }}
+                </span>
+                <h3 class="publication-title">
+                    <a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer">{{ pub.title }}</a>
+                </h3>
+                <div class="publication-links">
+                    <a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer" class="publication-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                        View Paper
+                    </a>
+                    {% if pub.code_url %}
+                    <a href="{{ pub.code_url }}" target="_blank" rel="noopener noreferrer" class="publication-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                        Code
+                    </a>
+                    {% endif %}
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
 
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
-</body>
+<!-- Contact Section -->
+<section class="section section-alt" id="contact">
+    <div class="container">
+        <div class="contact-content fade-in">
+            <h2 class="section-title center">Let's Connect</h2>
+            <p class="contact-description">
+                I'm always happy to discuss new ideas, research collaborations, 
+                or just connect and chat about technology and security.
+            </p>
+            <a href="mailto:{{ site.email }}" class="contact-email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+                {{ site.email }}
+            </a>
+            <div class="contact-social">
+                <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+                <a href="{{ site.scholar_url }}" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

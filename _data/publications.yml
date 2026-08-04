@@ -1,0 +1,17 @@
+# Publications - Add new entries at the top
+# Format:
+#   - title: "Paper Title"
+#     venue: "Conference/Journal Name"
+#     year: 2024
+#     url: "https://link-to-paper.com"
+#     code_url: "https://github.com/..." (optional)
+
+- title: "Exploiting CPU Clock Modulation for Covert Communication Channel"
+  venue: "SERA 2024"
+  year: 2024
+  url: "https://arxiv.org/abs/2404.05823"
+
+- title: "CAUSEC: Cache-based Secure Key Computation with (Mostly) Deprivileged Execution"
+  venue: "IEEE ICDCS 2023"
+  year: 2023
+  url: "https://ieeexplore.ieee.org/abstract/document/10272417"

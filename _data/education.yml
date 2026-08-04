@@ -1,0 +1,22 @@
+# Education - Add new entries at the top
+# Format:
+#   - period: "Start - End"
+#     institution: "University Name"
+#     degree: "Degree Title"
+#     advisor: "Advisor Name" (optional)
+#     advisor_url: "Advisor Website" (optional)
+
+- period: "January 2019 - May 2025"
+  institution: "Boise State University"
+  degree: "Ph.D. in Computing (Cybersecurity)"
+  advisor: "Dr. Nasir U. Eisty"
+  advisor_url: "http://nasireisty.com/"
+
+- period: "August 2015 - December 2018"
+  institution: "Lamar University"
+  degree: "Master of Science in Computer Science"
+  advisor: "Dr. Stefan Andrei"
+
+- period: "January 2009 - June 2014"
+  institution: "Mawlana Bhashani Science and Technology University, Bangladesh"
+  degree: "Bachelor of Science in Computer Science and Engineering"
