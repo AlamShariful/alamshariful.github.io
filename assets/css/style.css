@@ -234,18 +234,62 @@ h6 { font-size: 1rem; }
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
     font-family: var(--font-heading);
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.25rem;
+    font-weight: 600;
     color: var(--text-primary);
+    text-decoration: none;
 }
 
 .logo:hover {
     color: var(--text-primary);
 }
 
-.logo-bracket {
-    color: var(--accent-primary);
+.logo-image {
+    width: 36px;
+    height: 36px;
+}
+
+.logo-text {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.logo-accent {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Footer Logo */
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.footer-logo:hover {
+    color: var(--text-primary);
+}
+
+.footer-logo-image {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-logo-text {
+    display: flex;
+    gap: 0.25rem;
 }
 
 .main-nav .nav-list {
